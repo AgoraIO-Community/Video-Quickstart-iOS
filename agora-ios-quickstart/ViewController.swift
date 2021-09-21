@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         agoraKit?.joinChannel(
             byToken: <#Agora Temporary Token#>, channelId: "test",
             info: nil, uid: 0
-        ) { (channel, uid, elapsed) in
+        ) { (_, uid, _) in
             print("new uid is: \(uid)")
         }
     }
